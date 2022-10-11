@@ -1,4 +1,4 @@
-export class RestcountriesApi {
+export class FetchCountriesApi {
     getCountries(searchCountry) {
         const url = `https://restcountries.com/v3.1/name/${searchCountry}?fields=name,capital,population,flags,languages`;
         return fetch(url).then(response => {
